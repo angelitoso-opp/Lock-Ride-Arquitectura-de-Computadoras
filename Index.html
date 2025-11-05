@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock&Ride - Estacionamiento Inteligente</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
 
+<body>
+<nav class="navbar">
+    <div class="logo">Lock&Ride</div>
+    <ul class="nav-links">
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="about.html">Nosotros</a></li>
+        <li><a href="panel.html">Panel IoT</a></li>
+        <li><a href="faq.html">Preguntas</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+
+    </ul>
+</nav>
+
+<header class="hero" id="inicio">
+    <div class="hero-content">
+        <h1>Lock&Ride</h1>
+        <p>Estacionamientos inteligentes para bicicletas y scooters.</p>
+        <button id="btnPanel" class="btn-primary">Abrir Panel IoT</button>
+    </div>
+</header>
+
+<section id="beneficios" class="benefits">
+    <h2>Beneficios principales</h2>
+    <div class="cards">
+        <div class="card"><h3>🔒 Seguridad IoT</h3><p>Detecta manipulación o vibración en tiempo real.</p></div>
+        <div class="card"><h3>📊 Monitoreo Local</h3><p>Control visual de espacios ocupados y libres.</p></div>
+        <div class="card"><h3>🌐 Conectividad LAN</h3><p>Simulación estable sin internet externo.</p></div>
+    </div>
+</section>
+
+<section id="simulacion" class="simulation">
+    <h2>Simulación del sistema IoT</h2>
+    <p>Haz clic en los espacios para cambiar su estado.</p>
+    <div class="slots">
+        <button class="slot" id="slot1">🟢 Slot 1 - Libre</button>
+        <button class="slot" id="slot2">🔴 Slot 2 - Ocupado</button>
+        <button class="slot" id="slot3">🟡 Slot 3 - Alerta</button>
+    </div>
+</section>
+
+<section id="contacto" class="contact">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o sugerencias? ¡Haz clic en el botón para simular el envío!</p>
+    <button id="btnContacto" class="btn-secondary">Enviar mensaje</button>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>🚲 Lock&Ride</h3>
+            <p>Estacionamientos inteligentes para bicicletas y scooters.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="panel.html">Panel IoT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Créditos</h4>
+            <p><b>Proyecto:</b> Lock&Ride</p>
+            <p><b>Curso:</b> Arquitectura de Computadoras</p>
+            <p><b>Institución:</b> UPC 2025</p>
+            <p><b>Equipo:</b> Grupo 6</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Lock&Ride | Desarrollado por el equipo de Ingeniería de Software 🧠</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

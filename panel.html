@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock&Ride - Panel IoT</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
+<body>
+<nav class="navbar">
+    <div class="logo">Lock&Ride</div>
+    <ul class="nav-links">
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="about.html">Nosotros</a></li>
+        <li><a href="panel.html">Panel IoT</a></li>
+        <li><a href="faq.html">Preguntas</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<header class="hero small">
+    <div class="hero-content">
+        <h1>Panel IoT</h1>
+        <p>Simulación del estado de sensores y espacios</p>
+    </div>
+</header>
+
+<section class="simulation">
+    <h2>Estado de los sensores</h2>
+    <table>
+        <tr><th>Sensor</th><th>Ubicación</th><th>Estado</th></tr>
+        <tr><td>Sensor 1</td><td>Slot A1</td><td class="ok">🟢 Activo</td></tr>
+        <tr><td>Sensor 2</td><td>Slot A2</td><td class="busy">🔴 Ocupado</td></tr>
+        <tr><td>Sensor 3</td><td>Slot A3</td><td class="alert">🟡 Alerta</td></tr>
+    </table>
+
+    <div class="slots">
+        <button class="btn-secondary" id="updatePanel">Actualizar Panel</button>
+        <button class="btn-primary" id="reiniciar">Reiniciar Sensores</button>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>🚲 Lock&Ride</h3>
+            <p>Estacionamientos inteligentes para bicicletas y scooters.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="panel.html">Panel IoT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Créditos</h4>
+            <p><b>Proyecto:</b> Lock&Ride</p>
+            <p><b>Curso:</b> Arquitectura de Computadoras</p>
+            <p><b>Institución:</b> UPC 2025</p>
+            <p><b>Equipo:</b> Grupo 6</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Lock&Ride | Desarrollado por el equipo de Ingeniería de Software 🧠</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
