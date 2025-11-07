@@ -383,6 +383,61 @@ form button:hover {
     font-size: 13px;
     color: #bbb;
 }
+/* ===== NUEVA SECCIÓN DE CARDS ANCHAS ===== */
+.feature-grid {
+    background: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.feature-grid h2 {
+    color: #004aad;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-wide {
+    background: linear-gradient(145deg, #f7f9fc, #e3ebff);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.card-wide:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(145deg, #fff, #dbe7ff);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+    background: linear-gradient(135deg, #004aad, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section .btn-secondary {
+    margin-top: 20px;
+    background: white;
+    color: #004aad;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.cta-section .btn-secondary:hover {
+    background: #FFD700;
+}
 
 /* ===============================
    RESPONSIVE

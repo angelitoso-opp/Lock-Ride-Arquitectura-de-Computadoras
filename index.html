@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lock&Ride - Estacionamiento Inteligente</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -14,43 +14,55 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="about.html">Nosotros</a></li>
         <li><a href="panel.html">Panel IoT</a></li>
-        <li><a href="faq.html">Preguntas</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contacto</a></li>
-
     </ul>
 </nav>
 
-<header class="hero" id="inicio">
+<header class="hero">
     <div class="hero-content">
         <h1>Lock&Ride</h1>
         <p>Estacionamientos inteligentes para bicicletas y scooters.</p>
-        <button id="btnPanel" class="btn-primary">Abrir Panel IoT</button>
+        <a href="panel.html" class="btn-primary">Ir al Panel IoT</a>
     </div>
 </header>
 
-<section id="beneficios" class="benefits">
-    <h2>Beneficios principales</h2>
-    <div class="cards">
-        <div class="card"><h3>🔒 Seguridad IoT</h3><p>Detecta manipulación o vibración en tiempo real.</p></div>
-        <div class="card"><h3>📊 Monitoreo Local</h3><p>Control visual de espacios ocupados y libres.</p></div>
-        <div class="card"><h3>🌐 Conectividad LAN</h3><p>Simulación estable sin internet externo.</p></div>
+<section class="feature-grid">
+    <h2>¿Por qué elegir Lock&Ride?</h2>
+    <div class="card-grid">
+        <div class="card-wide">
+            <h3>🔒 Seguridad total</h3>
+            <p>Integración de sensores IoT para detectar vibraciones, intentos de robo y ocupación en tiempo real.</p>
+        </div>
+        <div class="card-wide">
+            <h3>🌐 Conectividad local</h3>
+            <p>Comunicación directa mediante red LAN, sin depender de internet, ideal para entornos educativos y pruebas MVP.</p>
+        </div>
+        <div class="card-wide">
+            <h3>📊 Panel web inteligente</h3>
+            <p>Visualiza estados, disponibilidad y alertas desde una interfaz moderna y ligera desarrollada en HTML, CSS y JS.</p>
+        </div>
+        <div class="card-wide">
+            <h3>🚲 Movilidad sostenible</h3>
+            <p>Promueve el uso de bicicletas y scooters eléctricos, reduciendo emisiones y fomentando la seguridad urbana.</p>
+        </div>
+        <div class="card-wide">
+            <h3>⚙️ Tecnología educativa</h3>
+            <p>Basado en microcontroladores NodeMCU y simulaciones en Cisco Packet Tracer para entornos académicos.</p>
+        </div>
+        <div class="card-wide">
+            <h3>💡 Escalable y modular</h3>
+            <p>Diseñado para ampliarse fácilmente, añadiendo nuevos nodos de sensores o funcionalidades de software.</p>
+        </div>
     </div>
 </section>
 
-<section id="simulacion" class="simulation">
-    <h2>Simulación del sistema IoT</h2>
-    <p>Haz clic en los espacios para cambiar su estado.</p>
-    <div class="slots">
-        <button class="slot" id="slot1">🟢 Slot 1 - Libre</button>
-        <button class="slot" id="slot2">🔴 Slot 2 - Ocupado</button>
-        <button class="slot" id="slot3">🟡 Slot 3 - Alerta</button>
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Conoce el futuro de la movilidad inteligente</h2>
+        <p>Lock&Ride combina hardware IoT con diseño web educativo para crear experiencias seguras y sostenibles.</p>
+        <a href="about.html" class="btn-secondary">Conocer más</a>
     </div>
-</section>
-
-<section id="contacto" class="contact">
-    <h2>Contáctanos</h2>
-    <p>¿Tienes dudas o sugerencias? ¡Haz clic en el botón para simular el envío!</p>
-    <button id="btnContacto" class="btn-secondary">Enviar mensaje</button>
 </section>
 
 <footer class="footer">
@@ -59,7 +71,6 @@
             <h3>🚲 Lock&Ride</h3>
             <p>Estacionamientos inteligentes para bicicletas y scooters.</p>
         </div>
-
         <div class="footer-col">
             <h4>Navegación</h4>
             <ul>
@@ -70,7 +81,6 @@
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
             <h4>Créditos</h4>
             <p><b>Proyecto:</b> Lock&Ride</p>
@@ -79,7 +89,6 @@
             <p><b>Equipo:</b> Grupo 6</p>
         </div>
     </div>
-
     <div class="footer-bottom">
         <p>© 2025 Lock&Ride | Desarrollado por el equipo de Ingeniería de Software 🧠</p>
     </div>
