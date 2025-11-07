@@ -442,12 +442,98 @@ form button:hover {
 /* ===============================
    RESPONSIVE
 =================================*/
-@media (max-width: 768px) {
-    .footer-container {
+@media (max-width: 900px) {
+    /* --- Navbar --- */
+    .navbar {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        background: rgba(255,255,255,0.1);
+        padding: 8px;
+        border-radius: 6px;
         text-align: center;
     }
+
+    .nav-links a:hover {
+        background: #FFD700;
+        color: #004aad;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin: 10px 0 20px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* --- Cards grid --- */
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .card-wide {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* --- CTA Section --- */
+    .cta-section {
+        padding: 50px 20px;
+    }
+
+    .cta-section h2 {
+        font-size: 22px;
+    }
+
+    .cta-section p {
+        font-size: 15px;
+    }
+
+    /* --- Footer --- */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .footer-col {
         margin-bottom: 20px;
     }
